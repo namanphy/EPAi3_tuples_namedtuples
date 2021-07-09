@@ -27,17 +27,17 @@ def test_get_average_age():
 def test_faster_get_average_age():
 	N = 100
 	a = session9.faster(N,session9.get_average_age,fake_profiles,fake_profiles_dict)
-	assert a == 'named tuple is faster',"dictionary is faster"
+	assert 'is faster' in a, 'Incorrect output'
 
 def test_faster_get_largest_blood_group():
 	N = 100
 	a = session9.faster(N,session9.get_largest_blood_group,fake_profiles,fake_profiles_dict)
-	assert a == 'named tuple is faster',"dictionary is faster"
+	assert 'is faster' in a, 'Incorrect output'
 
 def test_faster_get_oldest_birthdate():
 	N = 100
 	a = session9.faster(N,session9.get_oldest_birthdate,fake_profiles,fake_profiles_dict)
-	assert a == 'named tuple is faster',"dictionary is faster"
+	assert 'is faster' in a, 'Incorrect output'
 
 def test_get_average_time():
 	def add(x,y):
